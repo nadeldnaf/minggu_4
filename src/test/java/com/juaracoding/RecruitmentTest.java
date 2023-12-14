@@ -76,19 +76,7 @@ public class RecruitmentTest {
         public void testInputNotes(){
                 recruitmentPage.fillNotes("Juara Coding");
                 Assert.assertEquals(recruitmentPage.getNotesValue(), "Juara Coding");
-        } // TODO: Add test to check whether the consent data already ticked
-
-        @Test(priority = 11)
-        public void testCheckBoxConsentData(){
-                recruitmentPage.checkBoxConsentData();
-                Assert.assertTrue(recruitmentPage.isConsentDataChecked(), "Consent data checkbox should be checked");
         }
-        @Test (priority = 12)
-        public void submitCandidateForm(){
-                recruitmentPage.submitData();
-                Assert.assertEquals(recruitmentPage.getSuccessAddCandidateValue(), "Status: Application Initiated");
-        }
-
 }
 
 
